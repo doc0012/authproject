@@ -1,0 +1,118 @@
+
+
+.logo-image {
+  max-width: 40px; 
+  height: auto;
+}
+.profile-image{ max-width: 24px; 
+  height: auto;}
+
+
+  /* AppNavBar.css */
+
+/* Main Navbar Styles */
+.main-navbar {
+  background-color: #3498db; /* Change the background color as needed */
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  
+}
+
+/* Navbar Brand Styles */
+.navbar-brand {
+  color: #fff; /* Change the text color as needed */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: auto;
+}
+
+/* Nav Link Styles */
+.LINK-navbar {
+  color: #fff; /* Change the text color as needed */
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.LINK-navbar:hover {
+  color: #ecf0f1; /* Change the hover color as needed */
+}
+
+/* Dropdown Styles */
+.LINK-dropdown {
+  color: #333; /* Change the text color as needed */
+}
+
+.LINK-dropdown:hover {
+  color: #3498db; /* Change the hover color as needed */
+}
+
+/* Search Bar Styles */
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar-container {
+  display: flex;
+  border: 1px solid #fff; /* Change the border color as needed */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.search-input {
+  border: none;
+  padding: 8px;
+  width: 150px; /* Adjust the width as needed */
+  outline: none;
+}
+
+.search-button {
+  background-color: #fff; /* Change the background color as needed */
+  color: #3498db; /* Change the text color as needed */
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #3498db; /* Change the hover background color as needed */
+  color: #fff; /* Change the hover text color as needed */
+}
+
+/* Profile Dropdown Styles */
+.profile-image {
+  width: 30px; /* Change the width as needed */
+  height: 25px; /* Change the height as needed */
+  border-radius: 20%;
+  margin-right: 5px;
+}
+
+/* Profile Dropdown Styles */
+.profile-dropdown {
+  margin-left: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar-brand {
+    margin-right: 0;
+  }
+
+  .search-bar {
+    margin-left: auto;
+  }
+}
+
+  
+
+

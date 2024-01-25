@@ -7,13 +7,13 @@ const isAuth=require("../middleweares/isAuth")
 const {loginRules,registerRules,validator} =require("../middleweares/validator")
 //register User
 router.post("/register",registerRules(),validator,async(req,res)=>{
-    const{name,email,lastName,password}=req.body
+    const{name,email,lastName,password,role}=req.body
 
     let user=await User.findOne({email})
     if(user){
         return res.send({msg:"email already exists"})
     }
-user=new User({name,email,lastName,password})
+user=new User({name,email,lastName,password,role})
 
 
 const salt=10

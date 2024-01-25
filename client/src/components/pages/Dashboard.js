@@ -1,17 +1,20 @@
-import React from 'react'
-import { useSelector } from 'react-redux'
+import React ,{ useState,useEffect } from 'react'
+import { useSelector } from 'react-redux';
+import AnnoncesListhome from './annonces/annoncelisthome';
+import { useNavigate } from 'react-router-dom';
 
 function Dashboard() {
-
-  const user=useSelector((state)=>state.user)
-
-  return (
-    <div>
-      <h1>My SPACE</h1>
-      <h1>{user && user.name} { user && user.lastName}</h1>
-      <h3>{user && user.email}</h3>
-    </div>
-  )
-}
+const user=useSelector((state)=>state.auth.user.role)
+console.log(user,"roleUserrrrrrrrr")
+const navigate=useNavigate()
+useEffect(()=> {user==="annoncer" && navigate("/DashboardAnnoncer")})
+    return (
+      
+      <div>
+       <AnnoncesListhome />
+  
+      </div>
+    );
+  }
 
 export default Dashboard

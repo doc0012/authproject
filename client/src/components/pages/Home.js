@@ -1,9 +1,11 @@
 import React from 'react'
+import AnnoncesListhome from './annonces/annoncelisthome'
 
 function Home() {
   return (
     <div>
-      <h1>welcome to auth workshop</h1>
+    
+      <AnnoncesListhome  /> /* add home components*/
     </div>
   )
 }
